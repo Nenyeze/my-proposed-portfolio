@@ -1,0 +1,38 @@
+.portfolio{
+    background-color: #358993;
+}
+.navbar{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    grid-auto-rows: minmax(auto, auto);
+}
+.navbar ul{
+    grid-column: 3 / 6;
+    grid-row: 1;
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    text-align: right;
+    padding-right: 5px;
+}
+.navbar ul li a{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.contentx {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    font-weight: bold;
+
+}
+
+.endright {
+    float: right;margin-left: 20px;
+}
+.slider img{
+    
+}
