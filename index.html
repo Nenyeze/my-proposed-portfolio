@@ -4,73 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- Custom CSS File -->
+    <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
-    <!-- <div class="container p-3 my-3 bg-darkt text-white"> -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Nenyeze portfolio</a>
+    <div class="container p-3 my-3 bg-dark text-white">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mydetails.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work-places.html">work experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proj.html">projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        contact me
+                    </a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="tel:08064874416">phone<i class="fas fa-phone"></i></a>
+                    <a class="dropdown-item" href="mailto:chinenyeze@gmail.com">email<i class="fas fa-email"></i></a>
+                    <a class="dropdown-item" href="https://web.facebook.com/Nenyeze/">facebook<i class="fas fa-facebook"></i></a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="image">
+                    <img class="img-fluid rounded-circle" src="assests/images/me-HR.jpg" alt="" width="100px">
+                    <h3>Name: Eke chinenyeze</h3>
+                    <p>Education <br>Bachelor of science<br>Industrial Chemistry<br> Imo State University Owerri</p>
                 </div>
-            <ul>
-                <li><a href="myDetails">About me</a></li>
-                <li><a href="contact">Contact me</a></li>
-                <li><a href="Body">workk Experience</a></li>
-                <li><a href="work-places">organization worked</a></li>
-                <li><a href="proj">Projects</a></li>
-            </ul>
+                <nav class="skills">
+                    <h3>SKILLS</h3>
+                    <p>Languages</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PYTHON</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">JavaScript</a>
+                        </li>
+                    </ul>
+                    <div class="framework">
+                        <h3>Framework</h3>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bootstrap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nodesjs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cidcd">
+                        <h3>CI/CD</h3>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GitHUb</a>
+                            </li>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <div class="contentx">
+                    <!-- <a href="#" data-toggle="tooltip" title="Welcome To My Portfolio, Enjoy the Ride">
+                    <!<p>A Full Stack Developer</p> -->
+                    <button class="btn btn-success" data-toggle="tooltip" title="Welcome to My Portfolio, Enjoy the Ride">A Full Stack Developer</button><br>
+                    <button class="btn btn-secondary" data-toggle="tooltip" title="Welcome to My Portfolio, Enjoy the Ride">An Enthusiatic Designer</button><br>
+                    <button class="btn btn-secondary" data-toggle="tooltip" title="Welcome to My Portfolio, Enjoy the Ride">A great Mentor</button><br>
+                    <button class="btn btn-danger" data-toggle="tooltip" title="Welcome to My Portfolio, Enjoy the Ride">An Innovative Creator</button>
+                </div>
+                <div class="endright">
+                <img src="assests/images/full-stack.jpg" class="float Right" alt="" width="700" height="700"> 
+                <!-- <img src="assets/images/full-stack.jpg" alt="" width="200px"> -->
+                </div>
+            </div>
         </div>
-        <div class="navmid">
-            <img src="assests/images/me-HR.jpg" alt="" width="100px">
-            <p>Name: Eke chinenyeze</p>
-            <p>Education <br>Bachelor of science<br>Idustrial Chemistry<br> Imo State University Owerri</p>
-        </div>
-        <div class="navleft">
-            <h3>SkILLS</h3>
-            <h4>Languages</h4>
-            <ul class="lang">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>PYTHON</li>
-                <li>JavaScript</li>
-            </ul>
-            <ul class="frame">
-                <h4>Frameworks</h4>
-                <li>BootStrap</li>
-                <li>Nodes.js</li>
-            </ul>
-            <ul class="cicd">
-                <h3>CI/CD</h3>
-                <li>GIT</li>
-            </ul>
-        </div>
-        <div class="Body">
-            <h3>Github</h3>
-            <ul class="mainG">
-                <p>led development team of 9 to create GitHUb pages<br>
-                    allowiing customers repository to be hosted online</p>
-            </ul>
-           <h3>Front-End DEveloper</h3>
-           <ul class="Mainfront">
-                <p>utilized HTML, CSS, and JavaScript to create landing pages 100%<br>
-                responsive for companies and individuals</p>   
-            </ul>
-            <h3>Back-end Developer</h3>
-            <ul class="mainBack">
-                <p>created an inventory for 3 clients,that is 100%responsive</p>
-                <p>participated in a team building of a valid ATM machines</p>
-            </ul>
-        </div>
-        <div class="myDetails">
-            <li><a href="#"><span class="fa fa-user"></span>Nenyeze</a></li>
-        </div>
-    
-    
+        
+        </nav>
+      
+    </div>
 </body>
-<script src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+<script src="js/bootstrap.js"></script>
 </html>

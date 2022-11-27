@@ -33,6 +33,13 @@
 .endright {
     float: right;margin-left: 20px;
 }
-.slider img{
-    
+
+.little-image {
+    width: 60%;
+    height: 60%;
+}
+
+.pix {
+    width: 100%;
+    max-height: 600px;
 }
